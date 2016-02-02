@@ -14,10 +14,10 @@ In this lab, you'll master how to create, export and import a object module, i.e
 ## Instructions
 
 1. Create a file `module.js` with `module.exports = {}`
-2. Copy object from the snippet below into `module.js`
+2. Copy customer data object from the snippet below into `module.js` and export the data
 3. Create a file `main.js` 
 4. Import your object in `main.js` with `require()`
-5. Print an email of the person from `main.js`
+5. Print an email of the second customer from `main.js`
 6. Keep `main.js` and `module.js` in the same folder
 6. Run `$ npm test` to verify
 
