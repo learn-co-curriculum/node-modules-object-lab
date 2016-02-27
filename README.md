@@ -9,7 +9,9 @@
 
 ## Introduction
 
-In this lab, you'll master how to create, export and import a object module, i.e., a static module.
+We have some customers data for testing our application before we implement the real database or REST API. It's a bad idea to store this data in the code, so you're task is to organize the data as a separate file. This way it will be easier to switch from this customer data to some other source later. 
+
+In this lab, you'll master how to create, export and import an object module, i.e., a static module.
 
 ## Instructions
 
