@@ -1,17 +1,10 @@
-var test = require('tape'),
-  cp = require('child_process')
+var expect = require('chai').expect
+var path = require('path')
 
-test('node version', function (t) {
-  t.plan(2)
-  child = cp.exec('node main',
-  function (error, stdout, stderr) {
-    console.log('stdout: ' + stdout)
-    console.log('stderr: ' + stderr)
-    t.equal(stderr, '')
-    if (error !== null) {
-      console.log('exec error: ' + error)
-    }
-    stdout = stdout.replace('\n','')
-    t.equal(stdout, 'scott.wilkerson@hopeli.me')
+describe('main.js', function () {
+  it('must export email of the second customer', function(done){
+    var email = require(path.join(__dirname, '../main'))
+    expect(email).to.equal('scott.wilkerson@hopeli.me')
+    done()
   })
 })
