@@ -9,7 +9,9 @@
 
 ## Introduction
 
-We have some customer data for testing our application before we implement the real database or REST API. It's a bad idea to store this data in the code, so you're task is to organize the data as a separate file. This way it will be easier to switch from this customer data to some other source later.
+
+We have some customer data for testing our application before we implement the real database or REST API. It's a bad idea to store this data in the code, so your task is to organize the data as a separate file. This way it will be easier to switch from this customer data to some other source later.
+
 
 In this lab, you'll master how to create, export and import an object module, i.e., a static module.
 
@@ -85,4 +87,4 @@ A sample of `customers.txt`:
 
 The data is an array. In JavaScript/Node, arrays are objects with extra properties so the pattern `module.exports = {}` will work the same for arrays: `module.exports = []`.
 
-Arrays are 0-based so the second element will have an index of 1.
+Tip: Arrays in JavaScript are 0-based, so the second element of an array will have an index of 1.
