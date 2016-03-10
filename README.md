@@ -2,10 +2,8 @@
 
 ## Objectives
 
-1. Write a simple non-npm module with module.exports = {}
+1. Write a Node module with module.exports = {}
 1. Import your module from another file
-1. Invoke a method from the module
-
 
 ## Introduction
 
@@ -16,11 +14,10 @@ In this lab, you'll master how to create, export and import an object module, i.
 ## Instructions
 
 1. Create a file `module.js` with `module.exports = {}`
-2. Copy customer data object from the `customers.txt` (sample is below) into `module.js` and export the data
+2. Change `customers.txt` to `module.js` and export the data
 3. Create a file `main.js`
 4. Import your object in `main.js` with `require()`
 5. Print an email of the second customer from `main.js`
-6. Keep `main.js` and `module.js` in the same folder
 6. Run `npm test` to verify
 
 A sample of `customers.txt`:
@@ -85,4 +82,3 @@ A sample of `customers.txt`:
 
 The data is an array. In JavaScript/Node, arrays are objects with extra properties so the pattern `module.exports = {}` will work the same for arrays: `module.exports = []`.
 
-Tip: Arrays in JavaScript are 0-based, so the second element of an array will have an index of 1.
